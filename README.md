@@ -91,6 +91,4 @@ The dataset used for training is the classic **SMSSpamCollection**, containing l
 
 Contributions are welcome! Please submit a pull request or open an issue.
 
-## License
 
-This project is licensed under the MIT License.
