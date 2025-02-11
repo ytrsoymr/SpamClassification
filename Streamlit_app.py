@@ -25,7 +25,7 @@ def preprocess_text(text):
 # Load and preprocess the dataset
 @st.cache_data
 def load_data():
-    messages = pd.read_csv(r'smsspamcollection/SMSSpamCollection', sep='\t', names=["label", "message"], header=None)
+    messages = pd.read_csv(r'data/SMSSpamCollection', sep='\t', names=["label", "message"], header=None)
     corpus = [preprocess_text(message) for message in messages['message']]
     cv = CountVectorizer(max_features=2500)
     X = cv.fit_transform(corpus).toarray()
